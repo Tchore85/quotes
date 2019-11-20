@@ -62,14 +62,22 @@ function qod_scripts() {
 
 	wp_enqueue_script( 'qod-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 
+	// wp_enqueue_style( 'qod-fonts', ' https://fonts.googleapis.com/css?family=Exo:300,300i,500,500i&display=swap');
+
 	wp_enqueue_script( 'qod-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 
 // here is where you localiyed script code will go here, reference this script qod-script
 // look at the WP REST API SLIVES OR  the wp 2017 rest theme inf functions.php for more reference
 
+wp_localize_script('qod-script', 'qod_vars', array(
+	'nonce' => wp_create_nonce( 'wp_rest' ),
+	'ajax_url' => admin_url( 'admin-ajax.php' ),
+	'rest_url' => esc_url_raw(rest_url()),
+	'post_id' => get_the_ID(),
+	'comments_open' => comments_open(get_the_ID()),
+));
+
 }
-
-
 
 add_action( 'wp_enqueue_scripts', 'qod_scripts' );
 

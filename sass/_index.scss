@@ -1,0 +1,126 @@
+#new-quote-button {
+  background-color: #222;
+  border: 2px solid #0c0;
+  border-radius: 3px;
+  color: #0c0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.75rem 2.25rem;
+}
+
+.wrapper-container {
+  //border: solid;
+  width: 100%;
+  margin: 0;
+}
+
+.hfeed {
+  padding: 2.5%;
+}
+
+.page p {
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.site-info a {
+  color: #00cc00;
+  text-decoration: none;
+}
+
+.site-info {
+  margin: 4.5rem 0 3rem;
+}
+
+.logo-img {
+  display: block;
+  width: 300px;
+}
+
+.entry-title h1 {
+  font-family: 'Exo', sans-serif;
+  margin-top: 3rem;
+  font-size: 2em;
+}
+.entry-content a {
+  color: #00cc00;
+  text-decoration: none;
+}
+
+.main-navigation a {
+  color: #00cc00;
+}
+@include tablet {
+  .logo-img {
+    width: 500px;
+  }
+
+  .wrapper-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .post-archives ul li {
+    font-size: 1.25rem;
+  }
+
+  .entry-title h1 {
+    margin-top: 4rem;
+    font-size: 2em;
+  }
+
+  #primary-menu ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@include desktop {
+  .logo-img {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: 700px;
+  }
+
+  .entry-content p {
+    font-size: 2.5rem;
+    //width: 68%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  #new-quote-button {
+    margin: 0 auto;
+  }
+  .source {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.wrapper-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: inherit;
+  margin: 0 auto;
+}
+#site-navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+.main-navigation li {
+  border-right: 1px solid #fff;
+  line-height: 1;
+  padding: 0 1rem;
+}
+a {
+  line-height: 1;
+  padding: 0 1rem;
+}
