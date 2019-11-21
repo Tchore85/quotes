@@ -18,10 +18,10 @@
 								
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 							
-
-							<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by Michal Prokop' ), 'WordPress' ); ?></a>
-					</nav><!-- #site-navigation -->
-								
+					<div class="powered">
+								<a  href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by Michal Prokop' ), 'WordPress' ); ?></a>
+							</nav><!-- #site-navigation -->
+					</div>		
 					
 				  </div><!-- .site-info -->
 			</footer><!-- #colophon -->

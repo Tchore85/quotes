@@ -1,0 +1,52 @@
+@include desktop {
+  .page-id-206 .hfeed {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .page-id-211 {
+    .entry-title {
+      margin-left: 25%;
+      // border: solid;
+    }
+  }
+  .page-template-default {
+    .logo-img {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .quoteForm {
+    label {
+      color: white;
+    }
+  }
+
+  input {
+    background-color: #222;
+    margin-top: 1rem;
+    border: 2px solid #0c0;
+    border-radius: 3px;
+    color: #0c0;
+    font-size: 1.5rem;
+  }
+
+  .quote-submission form div label {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .quote-submission-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: inherit;
+  }
+  .page-id-206 {
+    .main-navigation {
+      width: 134%;
+    }
+  }
+}

@@ -62,18 +62,4 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import 'page-archive';
 @import 'mixins';
 @import 'footer';
-
-body {
-  background-color: #222222;
-  font-family: 'Exo', sans-serif;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: white;
-}
+@import 'page-submit';

@@ -15,7 +15,9 @@ html {
 }
 
 body {
-  background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+  background: $color__background-body;
+  font-family: 'Exo', sans-serif;
+  /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote,
@@ -70,4 +72,14 @@ img {
 table {
   margin: 0 0 $base__space-unit;
   width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
 }
