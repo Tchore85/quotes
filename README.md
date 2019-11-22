@@ -1,11 +1,13 @@
 # Quotes on Dev
 
-<img src="./images/Home-page-screenshot.png" />
-<img src="./images/article.png" />
+<div style="display:flex; height:200px;">
+<img src="./images/Home-page-screenshot.png" style="width:50%; object-fit:contain;"/>
+<img src="./images/article.png" style="width:50%;object-fit:contain;" />
+</div>
 
 ### Project description
 
-In This project, the main focus put on creating the Underscores Theme in Word Press. In the Document is applied knowledge of WordPress template hierarchy as well as actively using the Jason data based on aJax Functions using methods such a PUSH and POST.
+In This project, the main focus is on creating the Underscores Theme in Word Press. In the Document is applied knowledge of WordPress template hierarchy as well as actively using the Jason data based on aJax Functions using methods such a PUSH and POST.
 
 ## Key Learnings
 
