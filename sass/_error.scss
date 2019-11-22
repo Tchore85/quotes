@@ -5,6 +5,13 @@
   fieldset {
     border: none;
   }
+  .fa,
+  .search-submit {
+    font-size: 25px;
+    color: #00cc00;
+    background-color: #222;
+    border: none;
+  }
 }
 @include desktop {
   fieldset {
@@ -33,9 +40,12 @@
     .search-form {
       margin-top: 4rem;
     }
-    .fa {
+    .fa,
+    .search-submit {
       font-size: 33px;
       color: #00cc00;
+      background-color: #222;
+      border: none;
     }
   }
 }

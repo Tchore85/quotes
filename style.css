@@ -396,9 +396,13 @@ textarea {
 input[type='text'],
 input[type='email'],
 input[type='url'],
-input[type='password'],
-input[type='search'] {
+input[type='password'] {
   padding: 3px; }
+
+input[type='search'] {
+  padding: 6px;
+  font-size: 24px;
+  border: 1px solid #00cc00; }
 
 textarea {
   padding-left: 3px;
@@ -848,6 +852,13 @@ h2 {
 .error404 fieldset {
   border: none; }
 
+.error404 .fa,
+.error404 .search-submit {
+  font-size: 25px;
+  color: #00cc00;
+  background-color: #222;
+  border: none; }
+
 @media (min-width: 1080px) {
   fieldset {
     border: none; }
@@ -873,6 +884,9 @@ h2 {
   .error404 .site-footer,
   .error404 .search-form {
     margin-top: 4rem; }
-  .error404 .fa {
+  .error404 .fa,
+  .error404 .search-submit {
     font-size: 33px;
-    color: #00cc00; } }
+    color: #00cc00;
+    background-color: #222;
+    border: none; } }
