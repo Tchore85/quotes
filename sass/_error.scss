@@ -1,0 +1,41 @@
+.error404 {
+  .powered a {
+    border: none;
+  }
+  fieldset {
+    border: none;
+  }
+}
+@include desktop {
+  fieldset {
+    border: none;
+  }
+  .error404 {
+    #page {
+      margin-left: 20%;
+      margin-right: 20%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    #site-navigation {
+      display: unset;
+      line-height: 1;
+      padding: 0 1rem;
+    }
+    .powered a {
+      border: none;
+      line-height: 2.5rem;
+      text-align: center;
+    }
+    .site-footer,
+    .search-form {
+      margin-top: 4rem;
+    }
+    .fa {
+      font-size: 33px;
+      color: #00cc00;
+    }
+  }
+}

@@ -76,6 +76,7 @@ wp_localize_script('qod-script', 'qod_vars', array(
 	'nonce' => wp_create_nonce( 'wp_rest' ),
 	'ajax_url' => admin_url( 'admin-ajax.php' ),
 	'rest_url' => esc_url_raw(rest_url()),
+	'post_id'=>	get_the_ID(),
 	
 ));
 

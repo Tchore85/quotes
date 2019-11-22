@@ -17,7 +17,7 @@
     })
 
       .done(function(data) {
-        // console.log(data[0].content.rendered);
+        console.log(data[0]);
         // console.log(data[0].title);
 
         let results = data[0].content.rendered;
@@ -29,6 +29,45 @@
       })
       .fail(function(error) {
         console.log('an error occured', error);
+      });
+  });
+  $('#quote-submission-form').on('submit', function(event) {
+    event.preventDefault();
+
+    const $author = $('#quote-author');
+    const $content = $('#quote-content');
+    const $bookName = $('#quote-source');
+    const $url = $('#quote-source-url');
+
+    // console.log(
+    //   'Form values: ',
+    //   $author.val(),
+    //   $title.val(),
+    //   $bookName.val(),
+    //   $url.val()
+    // );
+
+    $.ajax({
+      method: 'POST',
+      url: qod_vars.rest_url + 'wp/v2/posts/',
+      data: {
+        title: $author.val(),
+        content: $content.val(),
+        _qod_quote_source: $bookName.val(),
+        _qod_quote_source_url: $url.val()
+        // comment_status: 'closed'
+      },
+      beforeSend: function(xhr) {
+        xhr.setRequestHeader('X-WP-Nonce', qod_vars.nonce);
+      }
+    })
+      .done(function(response) {
+        console.log($author + $content + $bookName + $url);
+        console.log(response);
+      })
+      .fail(function(error) {
+        console.log('something went wrong');
+        console.log(error);
       });
   });
 

@@ -841,3 +841,38 @@ h2 {
     text-align: inherit; }
   .page-id-206 .main-navigation {
     width: 134%; } }
+
+.error404 .powered a {
+  border: none; }
+
+.error404 fieldset {
+  border: none; }
+
+@media (min-width: 1080px) {
+  fieldset {
+    border: none; }
+  .error404 #page {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .error404 #site-navigation {
+    display: unset;
+    line-height: 1;
+    padding: 0 1rem; }
+  .error404 .powered a {
+    border: none;
+    line-height: 2.5rem;
+    text-align: center; }
+  .error404 .site-footer,
+  .error404 .search-form {
+    margin-top: 4rem; }
+  .error404 .fa {
+    font-size: 33px;
+    color: #00cc00; } }
