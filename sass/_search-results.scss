@@ -1,0 +1,23 @@
+.search-results {
+  .entry-title a {
+    color: $color_green_universal;
+    text-decoration: none;
+  }
+  .page-header h1 {
+    border-bottom: 1px dotted #fff;
+  }
+}
+@include desktop {
+  .search-results {
+    #page {
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+
+    .main-navigation {
+      display: flex;
+      justify-content: flex-end;
+      width: 153%;
+    }
+  }
+}

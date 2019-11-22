@@ -1,0 +1,24 @@
+.archive .hentry {
+  border-bottom: 1px dotted #fff;
+}
+
+@include desktop {
+  .archive {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .archive {
+    .wrapper-container {
+      width: auto;
+    }
+
+    .entry-content p {
+      font-size: 2.5rem;
+    }
+    .main-navigation {
+      display: flex;
+      justify-content: flex-end;
+      width: 153%;
+    }
+  }
+}

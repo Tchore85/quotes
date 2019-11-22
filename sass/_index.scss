@@ -1,8 +1,8 @@
 #new-quote-button {
-  background-color: #222;
+  background-color: $color__background-body;
   border: 2px solid #0c0;
   border-radius: 3px;
-  color: #0c0;
+  color: $color_green_universal;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1;
@@ -41,10 +41,10 @@
   color: #fff;
   font-family: 'Exo', sans-serif;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: $font__line-height-body;
 }
 .site-info a {
-  color: #00cc00;
+  color: $color_green_universal;
   text-decoration: none;
 }
 
@@ -71,21 +71,19 @@ h2 {
 }
 
 .entry-content a {
-  color: #00cc00;
+  color: $color_green_universal;
   text-decoration: none;
 }
 
 .main-navigation a {
   border-right: 1px solid #fff;
-  //line-height: 1;
   padding: 0 1rem;
-  color: #00cc00;
+  color: $color_green_universal;
 }
 
 .powered a {
   color: white;
-  //margin-left: 1rem;
-  //margin-top: 1rem;
+  border: none;
 }
 
 @include tablet {
@@ -127,7 +125,7 @@ h2 {
     &:after {
       font-family: 'FontAwesome ';
       font-weight: 900;
-      color: #00cc00;
+      color: $color_green_universal;
       font-size: 80px;
       position: absolute;
     }
@@ -157,6 +155,10 @@ h2 {
     width: 700px;
   }
 
+  .entry-content p {
+    font-size: 1rem;
+  }
+
   .post-archives a {
     font-size: 2rem;
     list-style: none;
@@ -168,15 +170,7 @@ h2 {
     position: relative;
     margin-left: 7%;
   }
-  .page-id-211 {
-    .site-content {
-      display: flex;
-      flex-wrap: wrap;
-      width: 50%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
+
   .home {
     .site-content {
       margin-left: 20%;
@@ -197,6 +191,16 @@ h2 {
   .source {
     display: flex;
     justify-content: center;
+  }
+
+  .home {
+    .wrapper-container {
+      width: auto;
+    }
+
+    .entry-content p {
+      font-size: 2.5rem;
+    }
   }
 
   .wrapper-container {

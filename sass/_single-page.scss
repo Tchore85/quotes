@@ -1,0 +1,14 @@
+@include desktop {
+  .single-post {
+    #page {
+      margin-left: 25%;
+      margin-right: 25%;
+
+      .main-navigation {
+        width: 134%;
+        bottom: 0;
+        margin-top: 2rem;
+      }
+    }
+  }
+}

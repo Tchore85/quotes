@@ -1,0 +1,42 @@
+.search-no-results {
+  #page {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.search-no-results {
+  .entry-title a {
+    color: $color_green_universal;
+    text-decoration: none;
+  }
+  .fa,
+  .search-submit {
+    font-size: 25px;
+    color: $color_green_universal;
+    background-color: #222;
+    border: none;
+  }
+  fieldset {
+    border: none;
+  }
+}
+
+@include desktop {
+  .search-no-results {
+    #page {
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    #site-navigation {
+      width: 153%;
+    }
+
+    input[type='search'] {
+      font-size: 35px;
+    }
+    .fa,
+    .search-submit {
+      font-size: 35px;
+    }
+  }
+}

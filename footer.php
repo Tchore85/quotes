@@ -19,7 +19,7 @@
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 							
 					<div class="powered">
-								<a  href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by Michal Prokop' ), 'WordPress' ); ?></a>
+								<a  href="<?php echo esc_url( "https://www.linkedin.com/in/michal-prokop-b4994617" ); ?>"><?php printf( esc_html( 'Proudly powered by Michal Prokop' ), 'WordPress' ); ?></a>
 							</nav><!-- #site-navigation -->
 					</div>		
 					

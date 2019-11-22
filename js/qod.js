@@ -3,11 +3,16 @@
 
   //your code goes here
 
+  let lastPage = '';
+
   //1:get request to grab random post and append to the DOM
 
   //add a click event for the "Show Me Another" btn and the run the AJAX code below
   $('#new-quote-button').on('click', function(event) {
     event.preventDefault();
+
+    lastPage = document.URL;
+    console.log(lastPage);
 
     $.ajax({
       method: 'GET',
@@ -22,6 +27,12 @@
 
         let results = data[0].content.rendered;
         let author = data[0].title.rendered;
+        console.log(data[0].slug);
+        history.pushState(null, null, data[0].slug);
+
+        // 1st value is an object which manage state
+        // 2nd value is the url title browser tab
+        // 3rd value is the url in the browse
 
         $('.entry-content').html(results);
         $('.entry-title').html(author);
@@ -30,7 +41,15 @@
       .fail(function(error) {
         console.log('an error occured', error);
       });
-  });
+    //.end of ajax
+
+    //update the page when we click the forward and bakc buttons
+    $(window).on('popstate', function() {
+      //update the url
+      window.location.replace(lastPage);
+    });
+  }); //end of button click
+
   $('#quote-submission-form').on('submit', function(event) {
     event.preventDefault();
 

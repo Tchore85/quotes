@@ -1,15 +1,36 @@
+.page-id-206 .hfeed {
+  .quoteForm label {
+    color: white;
+
+    textarea {
+      width: 50%;
+    }
+  }
+
+  .quote-submission form div label {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+
+  input {
+    background-color: #222;
+    margin-top: 1rem;
+    border: 2px solid #0c0;
+    border-radius: 3px;
+    color: $color_green_universal;
+    font-size: 1rem;
+    font-family: 'Exo', sans-serif;
+  }
+}
+
 @include desktop {
   .page-id-206 .hfeed {
     margin-left: 20%;
     margin-right: 20%;
   }
 
-  .page-id-211 {
-    .entry-title {
-      margin-left: 25%;
-      // border: solid;
-    }
-  }
   .page-template-default {
     .logo-img {
       display: flex;
@@ -23,13 +44,9 @@
     }
   }
 
-  input {
-    background-color: #222;
-    margin-top: 1rem;
-    border: 2px solid #0c0;
-    border-radius: 3px;
-    color: #0c0;
-    font-size: 1.5rem;
+  input submit {
+    margin-top: 3rem;
+    font-size: 2.5rem;
   }
 
   .quote-submission form div label {

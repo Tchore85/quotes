@@ -8,7 +8,7 @@
   .fa,
   .search-submit {
     font-size: 25px;
-    color: #00cc00;
+    color: $color_green_universal;
     background-color: #222;
     border: none;
   }
@@ -43,7 +43,7 @@
     .fa,
     .search-submit {
       font-size: 33px;
-      color: #00cc00;
+      color: $color_green_universal;
       background-color: #222;
       border: none;
     }

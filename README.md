@@ -1,23 +1,42 @@
-# Quotes on Dev Starter
+# Quotes on Dev
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+<img src="./images/Home-page-screenshot.png" />
+<img src="./images/article.png" />
 
-## Installation
+### Project description
 
-### 1. Download me (don't clone me!)
+In This project, is main focus put on creating the Underscores Theme in Word Press. In the Document is applyied knowledge of wordpress template hierarchy as well as actively using the Jason data based on aJax Functions using methods such a PUSH and POST.
 
-Then add me to your `wp-content/themes` directory.
+## Key Learnings
 
-### 2. Rename the `quotesondev-starter-master` directory
+- aJax in WordPress functions
+- WordPress Functions
+- WordPress Custom Loops
+- WordPress Database
+- WordPress Underscores Theme
+- WordPress Customs Plug-ins
+- PHP and his structure
+- WP_Query and get_posts
+- Installing and using Gulp
+- Applying SASS structure
+- Working with the Git
+- Java Vanilla and Jquery
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
+# Prerequisites
 
-### 3. Install the dev dependencies
+The project required installing and downloading the WordPress files. Thouse files were required to start creating the Undescores Theme.
 
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
+# Technologies Used
 
-### 4. Update the proxy in `gulpfile.js`
+- HTML
+- Css
+- Java Script
+- jQuery
+- PHP
+- Word Press
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+# Author:
 
-And now would be a good time to `git init` :)
+Michal Prokop
+Web developer student at Red Academy
+Vancouver Canada BC
