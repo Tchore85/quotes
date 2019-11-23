@@ -41,4 +41,4 @@ The project required installing and downloading the WordPress files. Those files
 
 Michal Prokop
 Web developer student at Red Academy
-Vancouver Canada BC
+Vancouver, Canada, BC
