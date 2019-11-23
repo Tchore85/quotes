@@ -23,6 +23,7 @@
 
       .done(function(data) {
         console.log(data[0]);
+
         // console.log(data[0].title);
 
         let results = data[0].content.rendered;
@@ -83,6 +84,12 @@
       .done(function(response) {
         console.log($author + $content + $bookName + $url);
         console.log(response);
+
+        $('#quote-submission-form').slideUp(function() {
+          $('.quote-submission-wrapper').append(
+            '<p>thanks for a new submission</p>'
+          );
+        });
       })
       .fail(function(error) {
         console.log('something went wrong');
