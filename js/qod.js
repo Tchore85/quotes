@@ -59,14 +59,6 @@
     const $bookName = $('#quote-source');
     const $url = $('#quote-source-url');
 
-    // console.log(
-    //   'Form values: ',
-    //   $author.val(),
-    //   $title.val(),
-    //   $bookName.val(),
-    //   $url.val()
-    // );
-
     $.ajax({
       method: 'POST',
       url: qod_vars.rest_url + 'wp/v2/posts/',
@@ -75,7 +67,6 @@
         content: $content.val(),
         _qod_quote_source: $bookName.val(),
         _qod_quote_source_url: $url.val()
-        // comment_status: 'closed'
       },
       beforeSend: function(xhr) {
         xhr.setRequestHeader('X-WP-Nonce', qod_vars.nonce);
@@ -87,7 +78,7 @@
 
         $('#quote-submission-form').slideUp(function() {
           $('.quote-submission-wrapper').append(
-            '<p>thanks for a new submission</p>'
+            '<p>Thank you for a new submission</p>'
           );
         });
       })

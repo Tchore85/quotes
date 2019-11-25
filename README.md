@@ -7,7 +7,7 @@
 
 ### Project description
 
-In This project, the main focus is on creating the Underscores Theme in Word Press. In the Document is applied knowledge of WordPress template hierarchy as well as actively using the Jason data based on aJax Functions using methods such a PUSH and POST.
+In This project, the main focus is on creating the Underscores Theme in Word Press. In the Document is applied knowledge of WordPress template hierarchy as well as actively manipulating with the Jason data, based on aJax Functions using methods such a PUSH and POST.
 
 ## Key Learnings
 
@@ -23,10 +23,6 @@ In This project, the main focus is on creating the Underscores Theme in Word Pre
 - Applying SASS structure
 - Working with the Git
 - Java Vanilla and Jquery
-
-# Prerequisites
-
-The project required installing and downloading the WordPress files. Those files were required to start creating the Underscores Theme.
 
 # Technologies Used
 

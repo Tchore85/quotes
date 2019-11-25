@@ -825,6 +825,14 @@ h2 {
   font-size: 1rem;
   font-family: 'Exo', sans-serif; }
 
+.page-id-206 .hfeed #quote-author,
+.page-id-206 .hfeed #quote-source,
+.page-id-206 .hfeed #quote-source-url {
+  color: white; }
+
+.page-id-206 .hfeed .powered a {
+  margin-left: 0.5rem; }
+
 @media (min-width: 1080px) {
   .page-id-206 .hfeed {
     margin-left: 20%;
